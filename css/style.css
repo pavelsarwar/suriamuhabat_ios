@@ -1,0 +1,281 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+@import url('http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css');
+
+@font-face {
+    font-family: myFirstFont;
+    src:url(SolaimanLipi_22-02-2012.ttf);
+}
+
+body{ 
+	background-color:#C8D8DC;
+	
+}
+
+.container-fluid{
+	padding-bottom:65px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  //overflow: hidden;
+  font-family: helvetica;
+  font-weight: 100;
+  padding-top: 25px;
+}
+
+h1,h2,h3,h4,h5{ margin:10px; font-size:18px}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  -webkit-transition: left 0.4s ease-in-out;
+  -moz-transition: left 0.4s ease-in-out;
+  -ms-transition: left 0.4s ease-in-out;
+  -o-transition: left 0.4s ease-in-out;
+  transition: left 0.4s ease-in-out;
+ 
+}
+
+.container.open-sidebar { left: 220px; position:fixed }
+
+.container.open-sidebarNew { right: 220px; position:fixed }
+
+#sidebar {
+  background: #3D59A8;
+  position: absolute;
+  width: 220px;
+  height: 100%;
+  left: -220px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: myFirstFont;
+}
+
+#sidebarNew {
+  background: #3D59A8;
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  right: 0;
+  z-index:1;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.ui-nav{
+	text-decoration:none;
+	color:white;
+}
+
+.navStacked:hover{
+	background-color:#1C3B82;
+}
+
+.navStacked{
+	background-color:#3D59A8;
+	box-shadow:2px 2px 2px rgba(0,0,0,.5);
+	font-family: myFirstFont;
+	border-radius:10px;
+}
+
+.description-head{
+	box-shadow:2px 2px 2px rgba(0,0,0,.5);
+	padding:1px;
+	background-color:lightgray;
+	font-family: myFirstFont;
+}
+
+.description{
+	text-align:justify;
+	padding:10px;
+	margin-top:10px;
+	background-color:white;
+	box-shadow: inset 5px 0 0 #3D59A8;
+	font-family: myFirstFont;
+}
+
+.swipe-area {
+  position: absolute;
+  width: 50px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 0;
+}
+
+
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sidebar ul li { margin: 0; }
+
+#sidebar ul li a {
+  padding: 15px 15px 15px 50px;
+  font-size: 13px;
+  font-weight: 80;
+  color: white;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid black;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+/*.nav li:nth-child(1) a:before { content: '\f00a'; }
+.nav li:nth-child(2) a:before { content: '\f012'; }
+.nav li:nth-child(3) a:before { content: '\f0e8'; }
+.nav li:nth-child(4) a:before { content: '\f0a1'; }
+.nav li:nth-child(5) a:before { content: '\f030'; }
+.nav li:nth-child(6) a:before { content: '\f115'; }
+.nav li:nth-child(7) a:before { content: '\f085'; }
+.nav li:nth-child(8) a:before { content: '\f023'; left: 23px; }*/
+
+#sidebarNew ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container-fluid a{
+	text-decoration:none;
+}
+
+#sidebarNew ul li { margin: 0; }
+
+#sidebarNew ul li a {
+  padding: 15px 15px 15px 50px;
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid black;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+
+.nav li a:before {
+  font: 14px fontawesome;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+}
+
+#navStacked a:hover{
+	background: #00BFFF;
+}
+
+.nav li a:hover {
+  background: #3D59A8;
+  
+}
+
+.nav li a.active {
+  box-shadow: inset 5px 0 0 #00BFFF, inset 6px 0 0 #222;
+  background: #00BFFF;
+}
+
+.main-content {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+}
+
+.main-content .content {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 60px;
+  width: 100%;
+}
+
+.main-content .content h1 { font-weight: 100; }
+
+.main-content .content p {
+  width: 100%;
+  line-height: 160%;
+}
+
+.main-content #sidebar-toggle {
+  border-radius: 3px;
+  display: block;
+  position: relative;
+  padding: 10px 7px;
+  float: left;
+  color:white;
+}
+
+.main-content #sidebar-toggle .bar {
+  display: block;
+  width: 25px;
+  margin-bottom: 3px;
+  height: 4px;
+  background-color: white;
+}
+
+.main-content #sidebar-toggle .bar:last-child { margin-bottom: 0; }
+
+.title {
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #eee;
+  border-bottom: 1px solid black;
+  background:#C8D8DC;
+}
+
+.navbar-fixed-top ,.navbar-fixed-bottom{
+	color: #eee;
+	border-bottom: 1px solid black;
+	background: #3D59A8;
+}
+
+.main-content #sidebarNew-toggle {
+  border-radius: 3px;
+  display: block;
+  position: relative;
+  padding: 10px 7px;
+  float: right;
+  color:white;
+}
+
+.main-content #sidebarNew-toggle .bar {
+  display: block;
+  width: 25px;
+  margin-bottom: 3px;
+  height: 4px;
+  background-color: lightgray;
+  border-radius: 1px;
+}
+
+.main-content #sidebarNew-toggle .bar:last-child { margin-bottom: 0; }
+
+
+
+<style>
+.glyphicon-home{font-size:18px;}
+.glyphicon-remove{font-size:18px;}
+.glyphicon-th-large{font-size:18px;}
+.glyphicon-info-sign{font-size:18px;}
+
+</style>
+

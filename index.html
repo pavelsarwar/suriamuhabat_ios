@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+		<meta http-equiv="refresh" content="3; url=index1.html" />
+		
+<meta charset="utf-8">
+<title>SURIA MUHABAT SDN. BHD.</title>
+
+
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+
+
+
+<script src="css/bootstrap/js/bootstrap.min.js"></script>
+
+	
+        <script src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8">
+
+            // Call onDeviceReady when Cordova is loaded.
+            //
+            // At this point, the document has loaded but cordova-2.0.0.js has not.
+            // When Cordova is loaded and talking with the native device,
+            // it will call the event `deviceready`.
+            //
+            function onLoad() {
+                document.addEventListener("deviceready", onDeviceReady, false);
+            }
+
+            // Cordova is loaded and it is now safe to call Cordova methods
+            //
+            function onDeviceReady() {
+                // Register the event listener
+                document.addEventListener("backbutton", onBackKeyDown, false);
+            }
+
+            // Handle the back button
+            //
+            function onBackKeyDown() {
+                navigator.app.exitApp();
+            }
+
+        </script>
+    
+
+    </head>
+    <body onload="onLoad()">
+
+    <center>
+			
+			    <img src="screen-hdpi-portrait.png" class="img-responsive"/>
+			   
+			
+         </center>
+
+
+	
+
+    </body>
+</html>
